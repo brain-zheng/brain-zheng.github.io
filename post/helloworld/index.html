@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
   <meta charset="utf-8">
-<title>HelloWorld - Hugo Future Imperfect Slim</title>
+<title>python爬虫爬取起点中文网 - brainZheng&#39;s techBlog</title>
 <meta name="description" content="A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -10,29 +10,43 @@
 
   <meta name="generator" content="Hugo 0.55.5" />
   
-<meta itemprop="name" content="HelloWorld">
-<meta itemprop="description" content="helloworld！！">
+<meta itemprop="name" content="python爬虫爬取起点中文网">
+<meta itemprop="description" content="python之爬取起点中文网 最近学了爬虫，想实战一下就选取了最近经常看小说的起点中文网来进行爬取 过程如下:
+ 分析爬取信息： 爬取网址：https://www.qidian.com/rank?chn=-1 爬取内容： 如上图有不同的分类，有奇幻，玄幻，武侠等分类，我们需要爬取每个分类里的各个排行榜的书名信息和排名信息 分析网页HTML文本： 在页面HTML源码中找到排行榜内书名和排名所在的位置，分析这些信息在HTML内的结构
+ 准备的python库工具：
+import requests import pymongo from pyquery import PyQuery as pq from urllib.parse import urlencode  requests请求库，用来发起页面请求，并获取返回的页面html文本 pymongo库用来连接MongoDB数据库，操作数据库并存储数据 pyquery库用来解析HTML文本，定位信息所在的节点，并获取信息 urllib.prase库中的urlencode是用来在url后面添加参数，构造请求的url的
+3.代码分析：
+ 请求页面函数部分   def get_page(chn): params = { &#39;chn&#39;:chn } headers = { &#39;User-Agent&#39;:&#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36&#39;, &#39;Host&#39;:&#39;www.qidian.com&#39;， } #把params参数通过urlencode参数添加到url上 url = &#39;https://www.qidian.com/rank?&#39; &#43; urlencode(params) try: response = requests.">
 
 
-<meta itemprop="datePublished" content="2019-05-13T11:04:36&#43;08:00" />
-<meta itemprop="dateModified" content="2019-05-13T11:04:36&#43;08:00" />
-<meta itemprop="wordCount" content="1">
+<meta itemprop="datePublished" content="2019-05-21T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-05-21T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="253">
 
 
 
 <meta itemprop="keywords" content="" />
 
-  <meta property="og:title" content="HelloWorld" />
-<meta property="og:description" content="helloworld！！" />
+  <meta property="og:title" content="python爬虫爬取起点中文网" />
+<meta property="og:description" content="python之爬取起点中文网 最近学了爬虫，想实战一下就选取了最近经常看小说的起点中文网来进行爬取 过程如下:
+ 分析爬取信息： 爬取网址：https://www.qidian.com/rank?chn=-1 爬取内容： 如上图有不同的分类，有奇幻，玄幻，武侠等分类，我们需要爬取每个分类里的各个排行榜的书名信息和排名信息 分析网页HTML文本： 在页面HTML源码中找到排行榜内书名和排名所在的位置，分析这些信息在HTML内的结构
+ 准备的python库工具：
+import requests import pymongo from pyquery import PyQuery as pq from urllib.parse import urlencode  requests请求库，用来发起页面请求，并获取返回的页面html文本 pymongo库用来连接MongoDB数据库，操作数据库并存储数据 pyquery库用来解析HTML文本，定位信息所在的节点，并获取信息 urllib.prase库中的urlencode是用来在url后面添加参数，构造请求的url的
+3.代码分析：
+ 请求页面函数部分   def get_page(chn): params = { &#39;chn&#39;:chn } headers = { &#39;User-Agent&#39;:&#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36&#39;, &#39;Host&#39;:&#39;www.qidian.com&#39;， } #把params参数通过urlencode参数添加到url上 url = &#39;https://www.qidian.com/rank?&#39; &#43; urlencode(params) try: response = requests." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://brainmeng.github.io/post/helloworld/" />
-<meta property="article:published_time" content="2019-05-13T11:04:36&#43;08:00"/>
-<meta property="article:modified_time" content="2019-05-13T11:04:36&#43;08:00"/>
+<meta property="og:url" content="https://brain-zheng.github.io/post/helloworld/" />
+<meta property="article:published_time" content="2019-05-21T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-05-21T00:00:00&#43;00:00"/>
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="HelloWorld"/>
-<meta name="twitter:description" content="helloworld！！"/>
-<meta name="twitter:site" content="@example"/>
+<meta name="twitter:title" content="python爬虫爬取起点中文网"/>
+<meta name="twitter:description" content="python之爬取起点中文网 最近学了爬虫，想实战一下就选取了最近经常看小说的起点中文网来进行爬取 过程如下:
+ 分析爬取信息： 爬取网址：https://www.qidian.com/rank?chn=-1 爬取内容： 如上图有不同的分类，有奇幻，玄幻，武侠等分类，我们需要爬取每个分类里的各个排行榜的书名信息和排名信息 分析网页HTML文本： 在页面HTML源码中找到排行榜内书名和排名所在的位置，分析这些信息在HTML内的结构
+ 准备的python库工具：
+import requests import pymongo from pyquery import PyQuery as pq from urllib.parse import urlencode  requests请求库，用来发起页面请求，并获取返回的页面html文本 pymongo库用来连接MongoDB数据库，操作数据库并存储数据 pyquery库用来解析HTML文本，定位信息所在的节点，并获取信息 urllib.prase库中的urlencode是用来在url后面添加参数，构造请求的url的
+3.代码分析：
+ 请求页面函数部分   def get_page(chn): params = { &#39;chn&#39;:chn } headers = { &#39;User-Agent&#39;:&#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36&#39;, &#39;Host&#39;:&#39;www.qidian.com&#39;， } #把params参数通过urlencode参数添加到url上 url = &#39;https://www.qidian.com/rank?&#39; &#43; urlencode(params) try: response = requests."/>
 
   
 
@@ -112,48 +126,6 @@
 
 
 
-  
-    <a href="//twitter.com/share?url=&amp;text=&amp" target="_blank" rel="noopener" class="share-btn twitter">
-        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener" class="share-btn facebook">
-        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
-        </a>
-  
-
-  
-    <a href="//reddit.com/submit?url=&amp;title=" target="_blank" rel="noopener" class="share-btn reddit">
-          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=&amp;title=" target="_blank" rel="noopener" class="share-btn linkedin">
-            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.stumbleupon.com/submit?url=&amp;title=" target="_blank" rel="noopener" class="share-btn stumbleupon">
-          <i class="fab fa-stumbleupon"></i><p>&nbsp;StumbleUpon</p>
-        </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=&amp;description=" target="_blank" rel="noopener" class="share-btn pinterest">
-          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check out this post by &amp;body=" target="_blank" class="share-btn email">
-          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
-        </a>
-  
-
 
     </menu>
   
@@ -163,35 +135,16 @@
       <section id="site-intro">
   <a href="/"><img src="/img/main/logo.jpg" class="circle" width="" alt="Hugo Future Imperfect Slim" /></a>
   <header>
-    <h1>Hugo Future Imperfect Slim</h1>
+    <h1>BrainZheng</h1>
   </header>
   <main>
-    <p>Another fine, responsive site template by <a href='http://html5up.net'>HTML5 UP</a>.</p>
+    <p>努力学习java后端的Coder</p>
   </main>
   
     <footer>
       <ul class="social-icons">
         
-
-        <li><a href="//github.com/pacollins/hugo-future-imperfect-slim" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
-
-
-
-
-
-
-<li><a href="//flickr.com/photos/example" target="_blank" rel="noopener" title="Flickr" class="fab fa-flickr"></a></li>
-
-
-
-
-<li><a href="//linkedin.com/in/example" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
-<li><a href="//linkedin.com/company/examplebusiness" target="_blank" rel="noopener" title="LinkedIn Company" class="fab fa-linkedin"></a></li>
-
-
-
-<li><a href="//facebook.com/example" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
-<li><a href="//reddit.com/user/example" target="_blank" rel="noopener" title="Reddit" class="fab fa-reddit"></a></li>
+        <li><a href="//github.com//brain-zheng" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
 
 
 
@@ -199,18 +152,36 @@
 
 
 
-<li><a href="//instagram.com/example" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
-
-<li><a href="//twitter.com/example" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
-
-
-<li><a href="//pinterest.com/example" target="_blank" rel="noopener" title="Pinterest" class="fab fa-pinterest-p"></a></li>
-<li><a href="//telegram.me/example" target="_blank" rel="noopener" title="telegram" class="fab fa-telegram"></a></li>
 
 
 
-<li><a href="//researchgate.net/profile/example" target="_blank" rel="noopener" title="Research Gate"><i class="ai ai-researchgate"></i></a></li>
-<li><a href="mailto:example" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="weixin://contacts/profile/zheng98706" target="_blank" rel="noopener" title="WeChat" class="fab fa-weixin"></a></li>
+<li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=2209829964&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener" title="QQ" class="fab fa-qq"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:2209829964@qq.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
 
       </ul>
     </footer>
@@ -222,17 +193,17 @@
   <header>
   <div class="title">
     
-        <h2><a href="/post/helloworld/">HelloWorld</a></h2>
+        <h2><a href="/post/helloworld/">python爬虫爬取起点中文网</a></h2>
     
     
 </div>
   <div class="meta">
-    <time class="published" datetime="2019-05-13 11:04:36 &#43;0800 CST">
-      May 13, 2019
+    <time class="published" datetime="2019-05-21 00:00:00 &#43;0000 UTC">
+      May 21, 2019
     </time>
-    <span class="author"></span>
+    <span class="author">Brain</span>
     
-        <p>1 minute read</p>
+        <p>2 minute read</p>
     
   </div>
 </header>
@@ -242,64 +213,206 @@
 
 
 
-  
-    <a href="//twitter.com/share?url=&amp;text=&amp" target="_blank" rel="noopener" class="share-btn twitter">
-        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener" class="share-btn facebook">
-        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
-        </a>
-  
-
-  
-    <a href="//reddit.com/submit?url=&amp;title=" target="_blank" rel="noopener" class="share-btn reddit">
-          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=&amp;title=" target="_blank" rel="noopener" class="share-btn linkedin">
-            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.stumbleupon.com/submit?url=&amp;title=" target="_blank" rel="noopener" class="share-btn stumbleupon">
-          <i class="fab fa-stumbleupon"></i><p>&nbsp;StumbleUpon</p>
-        </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=&amp;description=" target="_blank" rel="noopener" class="share-btn pinterest">
-          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check out this post by &amp;body=" target="_blank" class="share-btn email">
-          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
-        </a>
-  
-
 
   </section>
   
+<a href="/post/helloworld/" class="image featured">
+  <img src="/img/2019/05/pic02.jpg" alt="">
+</a>
+
 
   <div class="content">
-    <p>helloworld！！</p>
+    
+
+<h2 id="python之爬取起点中文网"><strong>python之爬取起点中文网</strong></h2>
+
+<p>最近学了爬虫，想实战一下就选取了最近经常看小说的起点中文网来进行爬取
+过程如下:</p>
+
+<ol>
+<li><p><strong>分析爬取信息</strong>：
+        <strong>爬取网址</strong>：<a href="https://www.qidian.com/rank?chn=-1">https://www.qidian.com/rank?chn=-1</a>
+        <strong>爬取内容</strong>：
+<img src="https://img-blog.csdn.net/2018102313144699?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzQ5Mzg1Mw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" width="70%" height="70%" /></p>
+
+<p>如上图有不同的分类，有奇幻，玄幻，武侠等分类，我们需要爬取每个分类里的各个排行榜的书名信息和排名信息
+<strong>分析网页HTML文本</strong>：
+    在页面HTML源码中找到排行榜内书名和排名所在的位置，分析这些信息在HTML内的结构</p></li>
+
+<li><p><strong>准备的python库工具</strong>：</p>
+
+<pre><code class="language-python">import requests      
+import pymongo   
+from pyquery import PyQuery as pq
+from urllib.parse import urlencode
+</code></pre>
+
+<p>requests请求库，用来发起页面请求，并获取返回的页面html文本
+pymongo库用来连接MongoDB数据库，操作数据库并存储数据
+pyquery库用来解析HTML文本，定位信息所在的节点，并获取信息
+urllib.prase库中的urlencode是用来在url后面添加参数，构造请求的url的</p>
+
+<p>3.<strong>代码分析</strong>：</p>
+
+<ul>
+<li><strong>请求页面函数部分</strong>
+<br /></li>
+</ul>
+
+<pre><code class="language-python">def get_page(chn):
+   params  = {
+       'chn':chn
+   }
+   headers = {
+       'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+       'Host':'www.qidian.com'，
+   }
+    
+   #把params参数通过urlencode参数添加到url上
+   url = 'https://www.qidian.com/rank?' + urlencode(params)
+    
+   try:
+       response = requests.get(url,headers=headers)        #请求url 获取响应
+       if response.status_code == 200:
+           return response.text            #若响应状态码为200，则返回页面html内容
+   except Exception:
+       print('Error')
+    ```
+
+- **获得页面的HTML文本后解析内容爬取想要的信息**
+        
+
+```python
+    def get_data(page_html,chn):
+          
+    获得页面的HTML文本后解析内容爬取想要的信息
+    :param page_html: 页面的源码
+    :param chn: 页码数
+    :return: 页面的详细信息
+       
+    page_info = {}
+    list_info = []
+    doc = pq(page_html)
+    rank_list_row = doc('.rank-list').items()
+    
+    #获取书的排名
+    for item in rank_list_row:
+        list_info_ = get_detial_info(item)
+        list_info.append(list_info_)
+    
+    #获书的分类
+    book_sort = doc('.type-list p a').items()
+    for item in book_sort:
+        if chn == int(item.attr('data-chanid')):
+            page_info[item.text()] = '{info}'.format(info=list_info)   #把书的排名和书的分类通过字典键值保存起来
+            break
+    return page_info
+    ```
+
+- **获取各个排行榜的数据**
+        
+
+```python
+def get_detial_info(rank_list):
+    '''
+    获取页面各个排行榜的书的排名
+    :param rank_list: 页面的每个排行榜的不同书的排名
+    :return: 排名信息
+    '''
+    list_info = {}
+    book_info = []
+    list_name = rank_list.find('.wrap-title').text()[:-3]    #对获取的字符串进行切片处理，获取书名
+    book_list = rank_list.find('li').items()                 #获取书在各个排行榜的排名
+    for item in book_list:
+        book_info_=get_book_info(item)
+        book_info.append(book_info_)
+    list_info[list_name] = '{info}'.format(info=book_info)   #把书的排名和书的名字通过字典键值存储
+    return list_info
+    
+</code></pre></li>
+</ol>
+
+<ul>
+<li><p><strong>获取书的信息</strong></p>
+
+<pre><code class="language-python">def get_book_info(book_list):
+    '''
+    获取书名，和书的在各个排行榜的排名
+    :param book_list:  页面各个排行榜的html文本
+    :return: 书名和排名
+    '''
+    book_rank = book_list.attr('data-rid')
+    book_name = book_list.find('a').text()
+    return {
+        '排名':book_rank,
+        '书名':book_name,
+    }
+</code></pre>
+
+<ul>
+<li><strong>把信息存储到MongDB上去:</strong></li>
+</ul>
+
+<pre><code class="language-python">#连接MongDB数据库，创建集合进行存储信息
+client = pymongo.MongoClient(host='localhost',port=27017)
+DB  = client['Novel']
+collection = DB['Novel_Rank']
+    
+def save_to_db(data):
+    '''
+    把爬取信息存储到mongoDB上
+    :param data: 爬取信息
+    :return:
+    '''
+    result = collection.insert_one(data)
+    print('save succeed')
+</code></pre></li>
+
+<li><p><strong>主函数调用</strong>：</p>
+
+<p>```python
+    def main():
+        &ldquo;&rsquo;
+        主函数
+        :return:
+        &ldquo;&rsquo;
+        for i in range(1,23):           #遍历页码
+            text = get_page(i)
+            page_info = get_data(text,i)
+            if page_info:                   #如果获取到的字典内有内容则储存
+                save_to_db(page_info)</p>
+
+<pre><code>if __name__ == '__main__':
+        main()
+```
+</code></pre></li>
+</ul>
+
+<p><strong>4. 爬取结果</strong>：</p>
+
+<p><img src="https://img-blog.csdn.net/20181023140846910?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzQ5Mzg1Mw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" width="85%" height="85%" /></p>
+
+<p>每个分类的排行榜信息：</p>
+
+<p><img src="https://img-blog.csdn.net/20181023140946859?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzQ5Mzg1Mw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" width="85%" height="85%" /></p>
+
+<p>这就完成对于起点中文网的内容爬取啦，对于写的错误和不好的地方大家可以在评论留言，我看到了会及时回复，谢谢大家</p>
 
   </div>
   <footer>
     <ul class="stats">
   
-    <li class="categories">
-      <ul>
-        <li>None</li>
-      </ul>
-    </li>
+    
+    
+      <li class="categories">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://brain-zheng.github.io/categories/python%E7%88%AC%E8%99%AB">Python爬虫</a></li>
+          
+        </ul>
+      </li>
+    
   
   
     <li class="tags">
@@ -332,11 +445,15 @@
     <article class="mini-post">
       <section>
         
+<a href="/about/" class="image featured">
+  <img src="/img/2019/05/pic03.jpg" alt="">
+</a>
+
 
       </section>
       <header>
-        <h1><a href="/post/helloworld/">HelloWorld</a></h1>
-        <time class="published" datetime="">May 13, 2019</time>
+        <h1><a href="/about/">关于博主</a></h1>
+        <time class="published" datetime="">May 22, 2019</time>
       </header>
     </article>
     
@@ -347,7 +464,33 @@
       </section>
       <header>
         <h1><a href="/post/">Post</a></h1>
-        <time class="published" datetime="">May 13, 2019</time>
+        <time class="published" datetime="">May 21, 2019</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <section>
+        
+<a href="/post/helloworld/" class="image featured">
+  <img src="/img/2019/05/pic02.jpg" alt="">
+</a>
+
+
+      </section>
+      <header>
+        <h1><a href="/post/helloworld/">python爬虫爬取起点中文网</a></h1>
+        <time class="published" datetime="">May 21, 2019</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <section>
+        
+
+      </section>
+      <header>
+        <h1><a href="/blog/examples/">Markdown and Shortcodes</a></h1>
+        <time class="published" datetime="">January 1, 2019</time>
       </header>
     </article>
     
@@ -365,6 +508,16 @@
             
           
           
+          <li>
+            
+              <a href="/categories/markdown/">markdown<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/python%E7%88%AC%E8%99%AB/">python爬虫<span class="count">1</span></a>
+            
+          
           </li>
         </ul>
       </section>
@@ -375,7 +528,7 @@
     <header>
       <h1>About</h1>
     </header>
-    <p>test</p>
+    <p>关于博主</p>
     <footer>
       <a href="/about" class="button">Learn More</a>
     </footer>
@@ -386,26 +539,7 @@
   
       <ul class="social-icons">
         
-
-        <li><a href="//github.com/pacollins/hugo-future-imperfect-slim" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
-
-
-
-
-
-
-<li><a href="//flickr.com/photos/example" target="_blank" rel="noopener" title="Flickr" class="fab fa-flickr"></a></li>
-
-
-
-
-<li><a href="//linkedin.com/in/example" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
-<li><a href="//linkedin.com/company/examplebusiness" target="_blank" rel="noopener" title="LinkedIn Company" class="fab fa-linkedin"></a></li>
-
-
-
-<li><a href="//facebook.com/example" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
-<li><a href="//reddit.com/user/example" target="_blank" rel="noopener" title="Reddit" class="fab fa-reddit"></a></li>
+        <li><a href="//github.com//brain-zheng" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
 
 
 
@@ -413,18 +547,36 @@
 
 
 
-<li><a href="//instagram.com/example" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
-
-<li><a href="//twitter.com/example" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
-
-
-<li><a href="//pinterest.com/example" target="_blank" rel="noopener" title="Pinterest" class="fab fa-pinterest-p"></a></li>
-<li><a href="//telegram.me/example" target="_blank" rel="noopener" title="telegram" class="fab fa-telegram"></a></li>
 
 
 
-<li><a href="//researchgate.net/profile/example" target="_blank" rel="noopener" title="Research Gate"><i class="ai ai-researchgate"></i></a></li>
-<li><a href="mailto:example" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="weixin://contacts/profile/zheng98706" target="_blank" rel="noopener" title="WeChat" class="fab fa-weixin"></a></li>
+<li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=2209829964&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener" title="QQ" class="fab fa-qq"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:2209829964@qq.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
 
       </ul>
   
@@ -432,7 +584,7 @@
     
       &copy; 2019
       
-        Hugo Future Imperfect Slim
+        brainZheng&#39;s techBlog
       
     .
     Powered by <a href="//gohugo.io" target="_blank" rel="noopener">Hugo</a>

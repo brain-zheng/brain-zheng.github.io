@@ -3,62 +3,81 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://brainmeng.github.io/fr/categories/</loc>
+    <loc>https://brain-zheng.github.io/fr/categories/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://brainmeng.github.io/categories/"
+                href="https://brain-zheng.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="https://brainmeng.github.io/pl/categories/"
+                href="https://brain-zheng.github.io/pl/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://brainmeng.github.io/fr/categories/"
+                href="https://brain-zheng.github.io/fr/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://brainmeng.github.io/fr/</loc>
-    <priority>0</priority>
+    <loc>https://brain-zheng.github.io/fr/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://brainmeng.github.io/"
+                href="https://brain-zheng.github.io/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="https://brainmeng.github.io/pl/"
+                href="https://brain-zheng.github.io/pl/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://brainmeng.github.io/fr/"
+                href="https://brain-zheng.github.io/fr/contact/"
                 />
   </url>
   
   <url>
-    <loc>https://brainmeng.github.io/fr/tags/</loc>
+    <loc>https://brain-zheng.github.io/fr/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://brainmeng.github.io/tags/"
+                href="https://brain-zheng.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="https://brainmeng.github.io/pl/tags/"
+                href="https://brain-zheng.github.io/pl/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://brainmeng.github.io/fr/tags/"
+                href="https://brain-zheng.github.io/fr/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://brain-zheng.github.io/fr/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://brain-zheng.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://brain-zheng.github.io/pl/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://brain-zheng.github.io/fr/tags/"
                 />
   </url>
   

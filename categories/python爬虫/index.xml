@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python爬虫 on brainZheng&#39;s techBlog</title>
+    <link>https://brain-zheng.github.io/categories/python%E7%88%AC%E8%99%AB/</link>
+    <description>Recent content in Python爬虫 on brainZheng&#39;s techBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 21 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://brain-zheng.github.io/categories/python%E7%88%AC%E8%99%AB/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>python爬虫爬取起点中文网</title>
+      <link>https://brain-zheng.github.io/post/helloworld/</link>
+      <pubDate>Tue, 21 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://brain-zheng.github.io/post/helloworld/</guid>
+      <description>python之爬取起点中文网 最近学了爬虫，想实战一下就选取了最近经常看小说的起点中文网来进行爬取 过程如下:
+ 分析爬取信息： 爬取网址：https://www.qidian.com/rank?chn=-1 爬取内容： 如上图有不同的分类，有奇幻，玄幻，武侠等分类，我们需要爬取每个分类里的各个排行榜的书名信息和排名信息 分析网页HTML文本： 在页面HTML源码中找到排行榜内书名和排名所在的位置，分析这些信息在HTML内的结构
+ 准备的python库工具：
+import requests import pymongo from pyquery import PyQuery as pq from urllib.parse import urlencode  requests请求库，用来发起页面请求，并获取返回的页面html文本 pymongo库用来连接MongoDB数据库，操作数据库并存储数据 pyquery库用来解析HTML文本，定位信息所在的节点，并获取信息 urllib.prase库中的urlencode是用来在url后面添加参数，构造请求的url的
+3.代码分析：
+ 请求页面函数部分   def get_page(chn): params = { &#39;chn&#39;:chn } headers = { &#39;User-Agent&#39;:&#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36&#39;, &#39;Host&#39;:&#39;www.qidian.com&#39;， } #把params参数通过urlencode参数添加到url上 url = &#39;https://www.qidian.com/rank?&#39; + urlencode(params) try: response = requests.</description>
+    </item>
+    
+  </channel>
+</rss>

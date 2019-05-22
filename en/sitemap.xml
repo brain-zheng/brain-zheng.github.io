@@ -3,74 +3,122 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://brainmeng.github.io/post/helloworld/</loc>
-    <lastmod>2019-05-13T11:04:36+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://brainmeng.github.io/</loc>
-    <lastmod>2019-05-13T11:04:36+08:00</lastmod>
+    <loc>https://brain-zheng.github.io/</loc>
+    <lastmod>2019-05-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://brainmeng.github.io/fr/"
+                href="https://brain-zheng.github.io/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="https://brainmeng.github.io/pl/"
+                href="https://brain-zheng.github.io/pl/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://brainmeng.github.io/"
+                href="https://brain-zheng.github.io/"
                 />
   </url>
   
   <url>
-    <loc>https://brainmeng.github.io/post/</loc>
-    <lastmod>2019-05-13T11:04:36+08:00</lastmod>
-    <priority>0</priority>
+    <loc>https://brain-zheng.github.io/about/</loc>
+    <lastmod>2019-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://brainmeng.github.io/categories/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://brainmeng.github.io/fr/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://brainmeng.github.io/pl/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://brainmeng.github.io/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://brainmeng.github.io/tags/</loc>
+    <loc>https://brain-zheng.github.io/categories/</loc>
+    <lastmod>2019-05-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://brainmeng.github.io/fr/tags/"
+                href="https://brain-zheng.github.io/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="https://brainmeng.github.io/pl/tags/"
+                href="https://brain-zheng.github.io/pl/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://brainmeng.github.io/tags/"
+                href="https://brain-zheng.github.io/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://brain-zheng.github.io/post/</loc>
+    <lastmod>2019-05-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://brain-zheng.github.io/categories/python%E7%88%AC%E8%99%AB/</loc>
+    <lastmod>2019-05-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://brain-zheng.github.io/post/helloworld/</loc>
+    <lastmod>2019-05-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://brain-zheng.github.io/blog/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://brain-zheng.github.io/categories/markdown/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://brain-zheng.github.io/blog/examples/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://brain-zheng.github.io/contact/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://brain-zheng.github.io/fr/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://brain-zheng.github.io/pl/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://brain-zheng.github.io/contact/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://brain-zheng.github.io/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://brain-zheng.github.io/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://brain-zheng.github.io/pl/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://brain-zheng.github.io/tags/"
                 />
   </url>
   
